@@ -4,7 +4,7 @@
 using namespace std;
 class board
 {
-private:
+protected:
     int **matrix;
     int N; // size of matrix
     int SRN;//sqrt of N
@@ -12,6 +12,7 @@ private:
 public:
     board();
     ~board();
+    void copyBoard(int **a);
     int randomGenerator(int num);
     void fillValues();
     //virtual void generator()=0;
